@@ -3,34 +3,36 @@ import React, { FC } from "react";
 interface SectionHeroProps {}
 
 export const SectionHero: FC<SectionHeroProps> = () => (
-  <div className="flex flex-col relative pt-10 lg:pt-20">
+  <div className="flex flex-col relative pt-10">
     <div className="flex flex-col lg:flex-row lg:items-center">
       <div
         className={`
         flex-shrink-0
-        lg:w-1/2
+        w-1/2
         flex
         flex-col
         items-start
-        space-y-8
-        sm:space-y-10
-        pb-14
-        lg:pb-48
-        xl:pr-14
-        lg:mr-10
-        xl:mr-0
+        space-y-3
       `}
       >
+        <span
+          className={`
+          text-base
+          md:text-lg
+          text-neutral-500
+          dark:text-neutral-400
+        `}
+        >
+          Hey there!
+        </span>
         <h2
           className={`
-          font-medium
+          font-bold
           text-4xl
-          md:text-5xl
-          xl:text-7xl
           !leading-[114%]
         `}
         >
-          Buy, Sell or Rent in a Jiffi
+          Robert Gil Pelayo
         </h2>
         <span
           className={`
@@ -40,8 +42,9 @@ export const SectionHero: FC<SectionHeroProps> = () => (
           dark:text-neutral-400
         `}
         >
-          Tired of playing phone tag with busy Estate Agents? Get in direct
-          contact with the the seller/renter and make the process fast and easy.
+          Aspiring{" "}
+          <span className="font-bold text-primary-500">Web Developer</span> from
+          Philippines
         </span>
       </div>
     </div>
