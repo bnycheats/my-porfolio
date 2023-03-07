@@ -29,8 +29,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      display: ["var(--font-display)", ...defaultTheme.fontFamily.sans],
-      body: ["var(--font-body)", ...defaultTheme.fontFamily.sans],
+      sans: ["Poppins", ...defaultTheme.fontFamily.sans],
     },
     colors: {
       transparent: "transparent",
@@ -71,6 +70,11 @@ module.exports = {
         700: customColors("--c-neutral-700"),
         800: customColors("--c-neutral-800"),
         900: customColors("--c-neutral-900"),
+      },
+    },
+    extend: {
+      colors: {
+        "primary-500": customColors("--c-primary-500"),
       },
     },
   },
