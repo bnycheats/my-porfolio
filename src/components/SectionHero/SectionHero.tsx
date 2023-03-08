@@ -10,7 +10,7 @@ export function SectionHero() {
         order-2
         md:order-2
         flex-shrink-0
-        w-1/2
+        md:w-1/2
         flex
         flex-col
         md:items-start

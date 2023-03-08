@@ -24,7 +24,7 @@ module.exports = {
     container: {
       center: true,
       screens: {
-        lg: "1024px",
+        laptop: "1024px",
       },
       padding: {
         DEFAULT: "1rem",
