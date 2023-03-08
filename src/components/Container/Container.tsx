@@ -4,9 +4,10 @@ interface ContainerProps {
   children?: ReactNode;
 }
 
-export const Container = ({ children }: ContainerProps) => (
-  <div
-    className={`
+export function Container({ children }: ContainerProps) {
+  return (
+    <div
+      className={`
     container
     relative
     space-y-24
@@ -14,7 +15,8 @@ export const Container = ({ children }: ContainerProps) => (
     lg:mb-32
     lg:space-y-32
   `}
-  >
-    {children}
-  </div>
-);
+    >
+      {children}
+    </div>
+  );
+}

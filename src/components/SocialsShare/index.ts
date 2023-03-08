@@ -1,0 +1,1 @@
+export { SocialsShare } from "./SocialsShare";

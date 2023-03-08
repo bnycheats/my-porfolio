@@ -1,3 +1,4 @@
+import "~/fonts/line-awesome-1.3.0/css/line-awesome.css";
 import "@/styles/globals.scss";
 import type { AppProps } from "next/app";
 
