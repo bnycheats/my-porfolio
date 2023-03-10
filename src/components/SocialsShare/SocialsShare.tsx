@@ -10,7 +10,6 @@ export interface SocialType {
 const socials: SocialType[] = [
   { icon: "lab la-facebook-f", href: "#" },
   { icon: "lab la-twitter", href: "#" },
-  { icon: "lab la-linkedin-in", href: "#" },
   { icon: "lab la-instagram", href: "#" },
 ];
 
@@ -24,11 +23,15 @@ export function SocialsShare({ className }: SocialsShare) {
           className={`
           md:flex
           text-3xl
-          text-primary-500
-          hover:text-primary-700
+          text-neutral-500
+          hover:text-primary-500
+          hover:scale-110
           leading-none
           space-x-2
           group
+          transition-colors
+          ease-in-out
+          duration-200
         `}
           href={item.href}
           key={index}

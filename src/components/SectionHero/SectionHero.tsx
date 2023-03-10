@@ -14,7 +14,7 @@ export function SectionHero() {
         flex
         flex-col
         md:items-start
-        space-y-2
+        space-y-1
       `}
         >
           <h2
@@ -35,9 +35,12 @@ export function SectionHero() {
           dark:text-neutral-400
         `}
           >
-            I specialize in front-end development, which focuses on designing
+            I'm specialized in front-end development, which focuses on designing
             and building the user-facing portion of a website.
           </span>
+          <button className="!mt-6 w-auto hover:bg-primary-600 bg-primary-500 font-semibold text-white py-2 px-4 border border-primary-500 hover:border-transparent rounded">
+            Projects
+          </button>
         </div>
         <div className="order-1 md:order-3">
           <svg
