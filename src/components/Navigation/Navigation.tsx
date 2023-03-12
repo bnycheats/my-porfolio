@@ -23,8 +23,9 @@ export const navItemsDesktop = [
   },
   {
     id: nanoId(),
-    href: "contact",
-    label: "Contact",
+    href: "contact-me",
+    label: "Contact Me",
+    isButton: true,
   },
 ];
 
@@ -43,10 +44,6 @@ export function Navigation({ isTop }: NavigationProps) {
           bg-opacity-70
           bg-white
           shadow-sm
-          dark:bg-neutral-900
-          dark:bg-opacity-60
-          dark:border-b
-          dark:border-neutral-700
         `
         }
       `}
@@ -74,7 +71,7 @@ export function Navigation({ isTop }: NavigationProps) {
         `}
         >
           <div className="mx-auto lg:mx-0">
-            <h1 className="font-bold text-primary-500 ">GILXD</h1>
+            <h1 className="font-bold text-neutral-500 text-2xl">GIL</h1>
           </div>
           <ul
             className={`

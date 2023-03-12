@@ -1,46 +1,63 @@
 import { SocialsShare } from "../SocialsShare";
+import { ButtonPrimary } from "../ButtonPrimary";
 
 export function SectionHero() {
   return (
-    <div className="flex flex-col relative pt-10">
-      <div className="flex flex-col text-center md:text-left md:flex-row items-center justify-between">
-        <SocialsShare className="order-3 md:order-1" />
+    <section
+      className="
+      flex 
+      flex-col 
+      relative 
+      pt-10"
+    >
+      <div
+        className="
+        flex 
+        flex-col 
+        text-center 
+        md:text-left 
+        md:flex-row 
+        items-center 
+        justify-between"
+      >
+        <SocialsShare
+          className="
+          order-3 
+          md:order-1"
+        />
         <div
           className={`
-        order-2
-        md:order-2
-        flex-shrink-0
-        md:w-1/2
-        flex
-        flex-col
-        md:items-start
-        space-y-1
+          order-2
+          md:order-2
+          flex-shrink-0
+          md:w-1/2
+          flex
+          flex-col
+          md:items-start
+          space-y-1
       `}
         >
           <h2
             className={`
-          font-bold
-          text-4xl
-          text-neutral-700
-          !leading-[114%]
+            font-bold
+            text-4xl
+            text-neutral-700
+            !leading-[114%]
         `}
           >
             Hi, I&apos;m <span className="text-primary-500">Gil</span>
           </h2>
           <span
             className={`
-          text-base
-          md:text-lg
-          text-neutral-500
-          dark:text-neutral-400
+            text-base
+            md:text-lg
+            text-neutral-500
         `}
           >
-            I'm specialized in front-end development, which focuses on designing
-            and building the user-facing portion of a website.
+            I&apos;m specialized in front-end development, which focuses on
+            designing and building the user-facing portion of a website.
           </span>
-          <button className="!mt-6 w-auto hover:bg-primary-600 bg-primary-500 font-semibold text-white py-2 px-4 border border-primary-500 hover:border-transparent rounded">
-            Projects
-          </button>
+          <ButtonPrimary className="!mt-6 w-auto">Projects</ButtonPrimary>
         </div>
         <div className="order-1 md:order-3">
           <svg
@@ -66,6 +83,6 @@ export function SectionHero() {
           </svg>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

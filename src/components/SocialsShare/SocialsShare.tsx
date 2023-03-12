@@ -25,11 +25,11 @@ export function SocialsShare({ className }: SocialsShare) {
           text-3xl
           text-neutral-500
           hover:text-primary-500
-          hover:scale-110
+          hover:scale-[1.2]
           leading-none
           space-x-2
           group
-          transition-colors
+          transition-all
           ease-in-out
           duration-200
         `}
