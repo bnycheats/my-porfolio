@@ -8,7 +8,8 @@ export function SectionHero() {
       flex 
       flex-col 
       relative 
-      pt-10"
+      md:pt-10
+      "
     >
       <div
         className="

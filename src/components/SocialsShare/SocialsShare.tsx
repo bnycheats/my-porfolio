@@ -23,8 +23,8 @@ export function SocialsShare({ className }: SocialsShare) {
           className={`
           md:flex
           text-3xl
-          text-neutral-500
-          hover:text-primary-500
+          text-primary-500
+          hover:text-primary-700
           hover:scale-[1.2]
           leading-none
           space-x-2

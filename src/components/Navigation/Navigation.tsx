@@ -73,17 +73,18 @@ export function Navigation({ isTop }: NavigationProps) {
           <div className="mx-auto lg:mx-0">
             <h1 className="font-bold text-neutral-500 text-2xl">GIL</h1>
           </div>
-          <ul
-            className={`
-            hidden
-            lg:flex
-            lg:flex-wrap
-            lg:items-center
-            relative
+          <nav>
+            <ul
+              className={`
+              hidden
+              lg:flex 
+              gap-8 
+              items-center
           `}
-          >
-            <NavigationMenu navItems={navItemsDesktop} />
-          </ul>
+            >
+              <NavigationMenu navItems={navItemsDesktop} />
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
